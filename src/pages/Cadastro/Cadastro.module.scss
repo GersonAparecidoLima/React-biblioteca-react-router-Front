@@ -11,41 +11,36 @@
   margin: 0 auto;
 }
 
-.formularioGenerico {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px; /* Espaçamento entre os campos */
-
-  .inputContainer {
-    margin-bottom: 15px;
-    width: 100%;
-
-    /* Aumentando a especificidade para garantir que o estilo seja aplicado */
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-size: 1rem;
-      color: #000; /* Definindo a cor da label como preta */
-    }
-
-    input {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
-      color: #000; /* Definindo a cor do texto do input como preta */
-      box-sizing: border-box;
-    }
-  }
+h2 {
+  color: black; /* Adiciona a cor preta ao título h2 */
+  font-size: 2rem; /* Exemplo de tamanho de fonte */
+  margin-bottom: 20px; /* Ajuste de margem inferior */
 }
 
-button {
+
+.popError {
+  color: white;
+  background-color: #ff4d4f; /* Cor vermelha para o erro */
+  padding: 8px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  margin-top: 5px;
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  transition: opacity 0.3s ease-out; /* Efeito suave ao aparecer e desaparecer */
+  opacity: 1;
+}
+
+.popError.hidden {
+  opacity: 0; /* Ocultar a mensagem */
+}
+
+.botaoProduto {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #007bff;
+  background-color: #28a745;
   color: white;
   cursor: pointer;
   font-size: 1rem;
@@ -53,6 +48,6 @@ button {
   margin-top: 10px;
 
   &:hover {
-    background-color: #0056b3;
+    background-color: #218838;
   }
 }
