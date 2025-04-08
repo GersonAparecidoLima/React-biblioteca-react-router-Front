@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import style from './Cadastro.module.scss';
 import FormularioGenerico from '../../components/FormularioGenerico/FormularioGenerico';
 
+
 function Cadastro() {
   // Definindo o estado dos campos do formulário
   const [dadosCadastro, setDadosCadastro] = useState({
@@ -31,6 +32,7 @@ function Cadastro() {
 
   return (
     <div className={style.cadastro}>
+
       <h2>Cadastro de Usuário</h2>
       <FormularioGenerico 
         campos={campos} 
